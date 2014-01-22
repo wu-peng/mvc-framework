@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc>
+	<entitys>
+		<entity name="student" class="com.example.entity.Student" />
+		<entity name="account" class="com.example.entity.Account" />
+	</entitys>
+	
+	<action entityName="student" class="com.example.action.StudentAction" path="/stu">
+		<forward name="success" value="/WEB-INF/view/success.jsp"/>
+		<forward name="fail" value="/WEB-INF/view/fail.jsp"/>
+	</action>
+	
+	<action entityName="account" class="com.example.action.AccountAction" path="/acc">
+		<forward name="success" value="/WEB-INF/view/success.jsp"/>
+		<forward name="fail" value="/WEB-INF/view/fail.jsp"/>
+	</action>
+</mvc>
